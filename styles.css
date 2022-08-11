@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+    font-family: 'Red Hat Display',sans-serif;
+    font-size: 16px;
+}
+
+
+.card{
+    width: 450px;
+    background-color: white;
+    color: var(--desaturated-blue);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.title{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.hero_img{
+    width: 100%;
+}
+
+.container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.container > *{
+    margin: 13px 0;
+   
+}
+
+.order-description{
+    line-height: 25px;
+}
+
+.proceed_button{
+    background-color: var(--bright-blue);
+    padding: 1rem 0;
+    color: white;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+
+.proceed_button:hover{
+    opacity: 0.8;
+}
+
+.cancel_button{
+    background-color: white;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: 700;
+    border-radius: 12px;
+    margin-top: 22px;
+    color: var(--desaturated-blue);
+}
+
+.cancel_button:hover{
+    color: black;
+}
+
+.plan_container{
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.plan_container a{
+    color: var(--bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.plan_container a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.plan_container strong{
+    color: var(--dark-blue);
+}
+
+.plan_description{
+    line-height: 20px;
+    margin-right: 75px;
+}
